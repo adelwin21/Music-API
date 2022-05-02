@@ -20,6 +20,7 @@ $('#track-list').on("click",".see-album", function(){
 
   $('.modal-body').html('');
   $.ajax({
+    headers: {  'Access-Control-Allow-Origin': 'https://adelwin21.github.io/Music-API/' },
     url: 'https://api.musixmatch.com/ws/1.1/artist.albums.get?',
     type: 'get',
     dataType: 'json',
@@ -61,6 +62,7 @@ $('#track-list').on("click",".see-album", function(){
 function searchArtist(){
   $('#track-list').html('');
   $.ajax({
+       headers: {  'Access-Control-Allow-Origin': 'https://adelwin21.github.io/Music-API/' },
     url: 'https://api.musixmatch.com/ws/1.1/artist.search',
     type: 'get',
     dataType: 'json',
