@@ -24,8 +24,7 @@
         <input
           type="text"
           class="form-control"
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
+          placeholder="Masukkan Nama Artist"
           aria-describedby="basic-addon2"
           id="search-input"
         />
@@ -35,18 +34,38 @@
             id="search-button"
             type="button"
           >
-            Cari Lagu
+            Artist Search
           </button>
         </div>
       </div>
     </div>
     <hr />
     <div class="container">
-      <ul class="list-group" id="track-list">
+      <div class="row" id="track-list">
       
-      </ul>
+      </div>
 
     </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Daftar Album</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       
 
 
@@ -64,6 +83,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="script.js" crossOrigin='anonymous'></script>
   </body>
 </html>
